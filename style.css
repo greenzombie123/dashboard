@@ -1,0 +1,24 @@
+body{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 20% 1fr;
+    grid-template-areas: 
+    "sidebar header"
+    "sidebar main";
+    height: 100vh;
+}
+
+header{
+    background-color:red;
+    grid-area: header;
+}
+
+aside{
+    background-color: blue;
+    grid-area: sidebar;
+}
+
+main{
+    background-color: gainsboro;
+    grid-area: main;
+}
